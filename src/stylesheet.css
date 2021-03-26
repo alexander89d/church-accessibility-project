@@ -1,0 +1,163 @@
+/* This website uses OpenDyslexic, an open-source, free to use font that does not require attribution. For more information, see: https://www.opendyslexic.org/ */
+
+/* Include Regular OpenDyselxic */
+@font-face {
+    font-family: open-dyslexic;
+    src: url('OpenDyslexic-Regular.otf');
+}
+
+/* Include Bold OpenDyslexic */
+@font-face {
+    font-family: open-dyslexic;
+    font-weight: bold;
+    src: url('OpenDyslexic-Bold.otf');
+}
+
+/* Include Italic OpenDyslexic */
+@font-face {
+    font-family: open-dyslexic;
+    font-style: italic;
+    src: url('OpenDyslexic-Italic.otf');
+}
+
+/* Include Bold Italic OpenDyslexic */
+@font-face {
+    font-family: open-dyslexic;
+    font-weight: bold;
+    font-style: italic;
+    src: url('OpenDyslexic-BoldItalic.otf');
+}
+
+body    {
+    font-size: 100%;
+    font-family: open-dyslexic;
+}
+
+h2 {
+    text-align: center;
+}
+
+#pageHead   {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-color: royalblue;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: white;
+}
+
+#navMenu {
+    position: relative;
+    right: 0px;
+    text-align: center;
+    word-wrap: break-word;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-right: 0;
+    background-color: lightyellow;
+}
+
+.centered-image {
+    margin: auto;
+}
+
+#mainContent {
+    position: relative;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#BibleQuote {
+    position: relative;
+    margin-left: 50%;
+    color: darkgreen;
+}
+
+#BibleQuote2 {
+    text-align: center;
+    color: darkgreen;
+}
+
+#ESVattrib {
+    font-size: 0.8em;
+    color: red;
+}
+
+#imageSources {
+    display: none;
+    list-style: none;
+    color: red;
+}
+
+#hideSources {
+    display: none;
+}
+
+table {
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 1em;
+}
+
+th {
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+td {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.col-1 {
+    position: relative;
+    width: 25%;
+}
+
+.col-2 {
+    position: relative;
+    width: 75%;
+}
+
+#goodContrast {
+    display: none;
+}
+
+#defaultTheme {
+    display: none;
+}
+
+.helpfulLinks {
+    list-style: none;
+}
+
+legend {
+    font-size: 1em;
+}
+
+lable {
+    margin-right: 20px;
+}
+
+#form-instructions {
+    height: 5em;
+    width: 50%;
+    overflow: auto;
+}
+
+#self-evaluation {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 1em;
+    margin-bottom: 1em;
+}

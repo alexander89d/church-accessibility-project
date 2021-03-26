@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Church Accessibility - Self-Evaluation</title>
+        
+        <!-- Link to Bootstrap CDN stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Link to my own stylesheet -->
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    </head>
+    <body>
+        <div id="pageHead">
+            <h1>Church Accessibility Project</h1>
+        </div>
+        <div id="navMenu" class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <a href="homepage.html">Homepage</a>
+                </div>
+                <div class="col">  
+                    <a href="common-universal-accommodations.html">Common Universal Accommodations</a>
+                </div>
+                <div class="col">
+                    <a href="tips-for-web-developers.html">Tips for Web Developers</a>
+                </div>
+                <div class="col">
+                    <a href="helpful-links.html">Helpful Links</a>
+                </div>
+                <div class="col">
+                    <a href="church-accessibility-self-evaluation.html" style="font-weight:bolder">Church Accessibility Self-Evaluation</a>
+                </div>
+            </div>
+        </div>
+        <div id="mainContent">
+            <h2>Church Accessibility Self-Evaluation</h2>
+            <br>
+            <h3>Instructions</h3>
+            <div id="form-instructions">
+                <p>Fill out the form below to assess your church’s accessibility for people with disabilities. The form is anonymous except for asking for your church’s name. The church name field is included in case you would like to include your church’s name in the results (for such purposes as printed or sending to other members of your church). You may leave this field blank if you wish.</p>
+                <p>After providing demographic information, you will be asked yes/no questions in the following 6 areas: Awareness, Physical Building, Community Outreach, Music and Multimedia, Resources and Curriculum, and Events. Please answer all questions to the best of your ability. When the results are tabulated and displayed, unanswered yes/no questions will be treated as if they were answered 'no.'</p>
+            </div>
+            <br>
+            <form action="church-accessibility-self-evaluation-results.html" method="get" id="self-evaluation">
+                <h3>Background Information</h3>
+                <br>
+                <lable>Your Church's Name: 
+                    <input type="text" name="church-name">
+                </lable>
+                <br><br>
+                <fieldset>
+                    <legend>Your Gender:</legend>
+                    <lable>
+                        <input type="radio" name="gender" value="male"> Male
+                    </lable>
+                    <lable>
+                        <input type="radio" name="gender" value="female"> Female
+                    </lable>
+                </fieldset>
+                <br>
+                <lable>Your Age: 
+                    <input type="number" name="age">
+                </lable>
+                <br><br>
+                <lable>Your Role in the Church: 
+                    <select name="church-role">
+                        <option value="none-selected">(select one)</option>
+                        <option value="pastor">Pastor</option>
+                        <option value="elder">Elder</option>
+                        <option value="leader-other">Other Type of Leader</option>
+                        <option value="congregation">Congregation</option>
+                    </select>
+                </lable>
+                <br><br>
+                <fieldset>
+                    <legend>Your Disability Status (check all that apply):</legend>
+                    <lable>
+                        <input type="checkbox" name="not-disabled" value="true"> Not Disabled
+                    </lable>
+                    <br>
+                    <lable>
+                        <input type="checkbox" name="disabled" value="true"> Disabled
+                    </lable>
+                    <br>
+                    <lable>
+                        <input type="checkbox" name="parent" value="true"> Parent of a Child with a Disability
+                    </lable>
+                </fieldset>
+                <br><br>
+                <h3>Awareness</h3>
+                <br>
+                <fieldset>
+                    <legend>Are you comfortable interacting with a person with a disability?</legend>
+                    <lable>
+                        <input type="radio" name="aware1" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="aware1" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you know or are you willing to learn how to make accommodations for someone with a disability?</legend>
+                    <lable>
+                        <input type="radio" name="aware2" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="aware2" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you know whether or not any members of your church have a disability?</legend>
+                    <lable>
+                        <input type="radio" name="aware3" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="aware3" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you believe that your church would be a welcoming environment for someone with a disability?</legend>
+                    <lable>
+                        <input type="radio" name="aware4" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="aware4" value="no"> No
+                    </lable>
+                </fieldset>
+                <br><br>
+                <h3>Physical Building</h3>
+                <br>
+                <fieldset>
+                    <legend>Are your church entrances accessible (meaning there is at least one entrance that either does not have stairs or has a ramp)?</legend>
+                    <lable>
+                        <input type="radio" name="building1" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="building1" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Is it possible for someone in a wheelchair to get to all areas of your church (meaning the church is either one story or has an elevator that allows access to all areas not on the entry level)?</legend>
+                    <lable>
+                        <input type="radio" name="building2" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="building2" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Does your sanctuary / gathering room have space for wheelchairs?</legend>
+                    <lable>
+                        <input type="radio" name="building3" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="building3" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Does your church have accessible restrooms (meaning restrooms have at least 1 wheelchair-accessible stall)?</legend>
+                    <lable>
+                        <input type="radio" name="building4" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="building4" value="no"> No
+                    </lable>
+                </fieldset>
+                <br><br>
+                <h3>Community Outreach</h3>
+                <br>
+                <fieldset>
+                    <legend>Do you know whether or not there are any group homes, nursing homes, or senior living communities in your area?</legend>
+                    <lable>
+                        <input type="radio" name="community1" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="community1" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Can those who cannot drive get to church either using public transportation or by being picked up by volunteer drivers from the church?</legend>
+                    <lable>
+                        <input type="radio" name="community2" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="community2" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Does your church provide support and resources to shut-ins or others who are unable to attend church regularly?</legend>
+                    <lable>
+                        <input type="radio" name="community3" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="community3" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Does your church actively work to ensure that community members with disabilities know that they are welcome?</legend>
+                    <lable>
+                        <input type="radio" name="community4" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="community4" value="no"> No
+                    </lable>
+                </fieldset>
+                <br><br>
+                <h3>Music and Multimedia</h3>
+                <br>
+                <fieldset>
+                    <legend>Is music played at a reasonable volume?</legend>
+                    <lable>
+                        <input type="radio" name="media1" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="media1" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Are hymn / song lyrics made available in alternative formats (such as large print, electronic form, and braille)?</legend>
+                    <lable>
+                        <input type="radio" name="media2" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="media2" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Is lighting reasonable (meaning there are not flashing lights, strobes, or other similar effects)?</legend>
+                    <lable>
+                        <input type="radio" name="media3" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="media3" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Are closed captioning and descriptive narration provided for all videos, and is a verbal description provided for all pictures that are used during a worship service?</legend>
+                    <lable>
+                        <input type="radio" name="media4" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="media4" value="no"> No
+                    </lable>
+                </fieldset>
+                <br><br>
+                <h3>Resources and Curriculum</h3>
+                <br>
+                <fieldset>
+                    <legend>Is the Bible made available to the congregation in alternative formats (such as large print, electronic form, and braille)?</legend>
+                    <lable>
+                        <input type="radio" name="resources1" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="resources1" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Are all handouts and church resources available to the congregation also made available in alternative formats?</legend>
+                    <lable>
+                        <input type="radio" name="resources2" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="resources2" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Are there any ministries or support groups for those with disabilities and their families?</legend>
+                    <lable>
+                        <input type="radio" name="resources3" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="resources3" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Does your church have a website that meets accessibility standards?</legend>
+                    <lable>
+                        <input type="radio" name="resources4" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="resources4" value="no"> No
+                    </lable>
+                </fieldset>
+                <br><br>
+                <h3>Events</h3>
+                <br>
+                <fieldset>
+                    <legend>Is either public transportation or church-provided transportation available to and from all church events?</legend>
+                    <lable>
+                        <input type="radio" name="events1" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="events1" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>When food is going to be served at an event, is it verified whether or not those who will be attending have food allergies?</legend>
+                    <lable>
+                        <input type="radio" name="events2" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="events2" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Are descriptions for any physical aspects of events provided (such as the event being outdoors or requiring physical activity)?</legend>
+                    <lable>
+                        <input type="radio" name="events3" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="events3" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Are there a variety of events so that those who may not be able to participate in certain types of events have other events to choose from? </legend>
+                    <lable>
+                        <input type="radio" name="events4" value="yes"> Yes
+                    </lable>
+                    <lable>
+                        <input type="radio" name="events4" value="no"> No
+                    </lable>
+                </fieldset>
+                <br>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+        <span class="sr-only">End of page content.</span>
+        
+        <!-- Scripts required for use of various Bootstrap CDN features -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

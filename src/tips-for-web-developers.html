@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Church Accessibility - Tips for Web Developers</title>
+        
+        <!-- Link to Bootstrap CDN stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Link to my own stylesheet -->
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    </head>
+    <body>
+        <div id="pageHead">
+            <h1>Church Accessibility Project</h1>
+        </div>
+        <div id="navMenu" class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <a href="homepage.html">Homepage</a>
+                </div>
+                <div class="col">  
+                    <a href="common-universal-accommodations.html">Common Universal Accommodations</a>
+                </div>
+                <div class="col">
+                    <a href="tips-for-web-developers.html" style="font-weight: bolder">Tips for Web Developers</a>
+                </div>
+                <div class="col">
+                    <a href="helpful-links.html">Helpful Links</a>
+                </div>
+                <div class="col">
+                    <a href="church-accessibility-self-evaluation.html">Church Accessibility Self-Evaluation</a>
+                </div>
+            </div>
+        </div>
+        <div id="mainContent">
+            <h2>Accessibility Tips for Web Developers</h2>
+            <p>The table below lists some tips for web developers on Do's and Don’ts of designing websites to be universally accessible. When applicable, there are links to websites that illustrate a concept or buttons that demonstrate certain effects on the current page. The links to outside websites included in the table are also included on the Helpful Links page.</p>
+            <table id="devTipsTable">
+                <tr>
+                    <th class="col-1">Tip</th>
+                    <th class="col-2">Example</th>
+                </tr>
+                <tr>
+                    <td class="col-1">Use high-contrast, easy-to-read color schemes.</td>
+                    <td class="col-2">The color scheme of the main content of this page (default white background with black font) as well as those of the page header (royal blue background with white font) and navigation menu (light yellow with blue link font) are intended to be easy to read. Click the button below to toggle the main content between the easy-to-ready black text with white background and a hard-to-read orange text on red background for the sake of illustration.<br><br><button id="poorContrast">Change to Poor Contrast</button><button id="goodContrast">Change to Good Contrast</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-1">Offer a few different contrast options to serve those with different visual needs and preferences.</td>
+                    <td class="col-2">This website uses a light color scheme by default. Be sure when creating other color schemes to change the color schemes of all necessary elements (in addition to text and background colors, consider things such as table borders and link colors).<br><br>See the link below for a great tool for calculating the hexadecimal inverse of a given color:<br><a href="https://www.colortools.net/color_complementary.html" target="_blank">https://www.colortools.net/color_complementary.html<br><br></a><button id="darkTheme">Click for Dark Theme</button><button id="defaultTheme">Click for Default Theme</button></td>
+                </tr>
+                <tr>
+                    <td class="col-1">Use a font that is easy to read for those with processing disorders such as dyslexia.</td>
+                    <td class="col-2">This website is written in a free, open source font called OpenDyslexic that is designed to make content easier to read for those with dyslexia. Letters are weighted and clearly differentiated from one another. This font can be used on any website without attribution.<br><br>Here is the link to the official website of OpenDyslexic: <a href="https://www.opendyslexic.org/" target="_blank">https://www.opendyslexic.org/</a><br><br>Here is the link to a webpage explaining how to implement OpenDyslexic on your own website:<br><a href="https://github.com/antijingoist/open-dyslexic/wiki/How-to:-Use-on-your-website" target="_blank">https://github.com/antijingoist/open-dyslexic/wiki/How-to:-Use-on-your-website</a></td>
+                </tr>
+            </table>
+        </div>
+        <span class="sr-only">End of page content.</span>
+        
+        <!-- Scripts required for use of various Bootstrap CDN features -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- My own script for use in tips for web developers table. -->
+        <script src="accessiblity-table-examples.js"></script>
+    </body>
+</html>
